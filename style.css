@@ -4,11 +4,14 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   background-color: #f8f9fa;
   color: #333;
-  scroll-behavior: smooth;
 }
 
 /* Navbar */
@@ -85,13 +88,28 @@ body {
   text-decoration: none;
 }
 
-.about, .projects, .skills, .contact {
-  background-color: white;
+/* About Section (Dynamic + Full Width) */
+.about {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  color: #00363a;
+  padding: 80px 0;
+  width: 100%;
 }
 
-.container {
+.about .container {
   max-width: 1000px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 /* Projects */
@@ -133,6 +151,13 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: default;
+}
+
+.skill-list li:hover {
+  background-color: #00bcd4;
+  color: white;
 }
 
 /* Contact */
@@ -141,11 +166,34 @@ body {
   text-decoration: none;
 }
 
+/* Footer */
 footer {
   background: #222;
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+/* Back to Top Button */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 999;
+  font-size: 1.5rem;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #1976d2;
 }
 
 /* Responsive */
@@ -177,4 +225,83 @@ footer {
     font-size: 2rem;
   }
 }
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button.btn {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button.btn:hover {
+  background-color: #1976d2;
+}
+
+/* Light/Dark Mode Toggle */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+body.dark-mode .section {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .navbar {
+  background-color: #000;
+}
+
+body.dark-mode .nav-links a:hover {
+  color: #90caf9;
+}
+
+body.dark-mode .project-card {
+  background-color: #2a2a2a;
+}
+
+body.dark-mode .skill-list li:hover {
+  background-color: #1976d2;
+  color: #fff;
+}
+
+body.dark-mode footer {
+  background-color: #000;
+}
+
+/* Toggle Button (moon/sun icon) */
+#toggleTheme {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Responsive Toggle */
+@media (max-width: 768px) {
+  #toggleTheme {
+    margin-top: 10px;
+  }
+}
+
 
