@@ -1,0 +1,67 @@
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* smooth scroll */
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+nav {
+  background-color: #222;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid #00bcd4;
+}
+
+/* Sections */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+  min-height: 100vh;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+#home {
+  background-color: #00bcd4;
+  color: white;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
