@@ -11,7 +11,7 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   background-color: #f8f9fa;
-  color: #ffe082;
+  color: #000000;
 }
 
 /* Navbar */
@@ -303,5 +303,4 @@ body.dark-mode footer {
     margin-top: 10px;
   }
 }
-
 
