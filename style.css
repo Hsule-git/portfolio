@@ -25,7 +25,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optional shadow for effect */
 }
 
 .logo {
@@ -112,6 +111,37 @@ body {
   font-size: 1.1rem;
   line-height: 1.6;
 }
+
+
+/* Experience Section (Dynamic + Full Width) */
+.workexp {
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+  color: #00363a;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.workexp .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.workexp h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.workexp h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.workexp p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
 
 /* Projects */
 .project-grid {
@@ -304,5 +334,4 @@ body.dark-mode footer {
     margin-top: 10px;
   }
 }
-
 
